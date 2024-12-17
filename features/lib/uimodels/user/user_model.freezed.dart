@@ -16,17 +16,12 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$UserModel {
-  int get id => throw _privateConstructorUsedError;
-  String get name => throw _privateConstructorUsedError;
-  String get company => throw _privateConstructorUsedError;
-  String get username => throw _privateConstructorUsedError;
-  String get email => throw _privateConstructorUsedError;
-  String get address => throw _privateConstructorUsedError;
-  String get zip => throw _privateConstructorUsedError;
-  String get state => throw _privateConstructorUsedError;
-  String get country => throw _privateConstructorUsedError;
-  String get phone => throw _privateConstructorUsedError;
-  String get photo => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
+  String? get firstName => throw _privateConstructorUsedError;
+  String? get lastName => throw _privateConstructorUsedError;
+  String? get email => throw _privateConstructorUsedError;
+  String? get phone => throw _privateConstructorUsedError;
+  String? get image => throw _privateConstructorUsedError;
 
   /// Create a copy of UserModel
   /// with the given fields replaced by the non-null parameter values.
@@ -41,17 +36,12 @@ abstract class $UserModelCopyWith<$Res> {
       _$UserModelCopyWithImpl<$Res, UserModel>;
   @useResult
   $Res call(
-      {int id,
-      String name,
-      String company,
-      String username,
-      String email,
-      String address,
-      String zip,
-      String state,
-      String country,
-      String phone,
-      String photo});
+      {int? id,
+      String? firstName,
+      String? lastName,
+      String? email,
+      String? phone,
+      String? image});
 }
 
 /// @nodoc
@@ -69,63 +59,38 @@ class _$UserModelCopyWithImpl<$Res, $Val extends UserModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? company = null,
-    Object? username = null,
-    Object? email = null,
-    Object? address = null,
-    Object? zip = null,
-    Object? state = null,
-    Object? country = null,
-    Object? phone = null,
-    Object? photo = null,
+    Object? id = freezed,
+    Object? firstName = freezed,
+    Object? lastName = freezed,
+    Object? email = freezed,
+    Object? phone = freezed,
+    Object? image = freezed,
   }) {
     return _then(_value.copyWith(
-      id: null == id
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      company: null == company
-          ? _value.company
-          : company // ignore: cast_nullable_to_non_nullable
-              as String,
-      username: null == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      email: null == email
+              as int?,
+      firstName: freezed == firstName
+          ? _value.firstName
+          : firstName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      lastName: freezed == lastName
+          ? _value.lastName
+          : lastName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String,
-      address: null == address
-          ? _value.address
-          : address // ignore: cast_nullable_to_non_nullable
-              as String,
-      zip: null == zip
-          ? _value.zip
-          : zip // ignore: cast_nullable_to_non_nullable
-              as String,
-      state: null == state
-          ? _value.state
-          : state // ignore: cast_nullable_to_non_nullable
-              as String,
-      country: null == country
-          ? _value.country
-          : country // ignore: cast_nullable_to_non_nullable
-              as String,
-      phone: null == phone
+              as String?,
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
-              as String,
-      photo: null == photo
-          ? _value.photo
-          : photo // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -139,17 +104,12 @@ abstract class _$$UserModelImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {int id,
-      String name,
-      String company,
-      String username,
-      String email,
-      String address,
-      String zip,
-      String state,
-      String country,
-      String phone,
-      String photo});
+      {int? id,
+      String? firstName,
+      String? lastName,
+      String? email,
+      String? phone,
+      String? image});
 }
 
 /// @nodoc
@@ -165,63 +125,38 @@ class __$$UserModelImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? company = null,
-    Object? username = null,
-    Object? email = null,
-    Object? address = null,
-    Object? zip = null,
-    Object? state = null,
-    Object? country = null,
-    Object? phone = null,
-    Object? photo = null,
+    Object? id = freezed,
+    Object? firstName = freezed,
+    Object? lastName = freezed,
+    Object? email = freezed,
+    Object? phone = freezed,
+    Object? image = freezed,
   }) {
     return _then(_$UserModelImpl(
-      id: null == id
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      company: null == company
-          ? _value.company
-          : company // ignore: cast_nullable_to_non_nullable
-              as String,
-      username: null == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      email: null == email
+              as int?,
+      firstName: freezed == firstName
+          ? _value.firstName
+          : firstName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      lastName: freezed == lastName
+          ? _value.lastName
+          : lastName // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
-              as String,
-      address: null == address
-          ? _value.address
-          : address // ignore: cast_nullable_to_non_nullable
-              as String,
-      zip: null == zip
-          ? _value.zip
-          : zip // ignore: cast_nullable_to_non_nullable
-              as String,
-      state: null == state
-          ? _value.state
-          : state // ignore: cast_nullable_to_non_nullable
-              as String,
-      country: null == country
-          ? _value.country
-          : country // ignore: cast_nullable_to_non_nullable
-              as String,
-      phone: null == phone
+              as String?,
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
-              as String,
-      photo: null == photo
-          ? _value.photo
-          : photo // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -231,43 +166,28 @@ class __$$UserModelImplCopyWithImpl<$Res>
 class _$UserModelImpl implements _UserModel {
   const _$UserModelImpl(
       {required this.id,
-      required this.name,
-      required this.company,
-      required this.username,
+      required this.firstName,
+      required this.lastName,
       required this.email,
-      required this.address,
-      required this.zip,
-      required this.state,
-      required this.country,
       required this.phone,
-      required this.photo});
+      required this.image});
 
   @override
-  final int id;
+  final int? id;
   @override
-  final String name;
+  final String? firstName;
   @override
-  final String company;
+  final String? lastName;
   @override
-  final String username;
+  final String? email;
   @override
-  final String email;
+  final String? phone;
   @override
-  final String address;
-  @override
-  final String zip;
-  @override
-  final String state;
-  @override
-  final String country;
-  @override
-  final String phone;
-  @override
-  final String photo;
+  final String? image;
 
   @override
   String toString() {
-    return 'UserModel(id: $id, name: $name, company: $company, username: $username, email: $email, address: $address, zip: $zip, state: $state, country: $country, phone: $phone, photo: $photo)';
+    return 'UserModel(id: $id, firstName: $firstName, lastName: $lastName, email: $email, phone: $phone, image: $image)';
   }
 
   @override
@@ -276,22 +196,18 @@ class _$UserModelImpl implements _UserModel {
         (other.runtimeType == runtimeType &&
             other is _$UserModelImpl &&
             (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.company, company) || other.company == company) &&
-            (identical(other.username, username) ||
-                other.username == username) &&
+            (identical(other.firstName, firstName) ||
+                other.firstName == firstName) &&
+            (identical(other.lastName, lastName) ||
+                other.lastName == lastName) &&
             (identical(other.email, email) || other.email == email) &&
-            (identical(other.address, address) || other.address == address) &&
-            (identical(other.zip, zip) || other.zip == zip) &&
-            (identical(other.state, state) || other.state == state) &&
-            (identical(other.country, country) || other.country == country) &&
             (identical(other.phone, phone) || other.phone == phone) &&
-            (identical(other.photo, photo) || other.photo == photo));
+            (identical(other.image, image) || other.image == image));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, company, username,
-      email, address, zip, state, country, phone, photo);
+  int get hashCode =>
+      Object.hash(runtimeType, id, firstName, lastName, email, phone, image);
 
   /// Create a copy of UserModel
   /// with the given fields replaced by the non-null parameter values.
@@ -304,40 +220,25 @@ class _$UserModelImpl implements _UserModel {
 
 abstract class _UserModel implements UserModel {
   const factory _UserModel(
-      {required final int id,
-      required final String name,
-      required final String company,
-      required final String username,
-      required final String email,
-      required final String address,
-      required final String zip,
-      required final String state,
-      required final String country,
-      required final String phone,
-      required final String photo}) = _$UserModelImpl;
+      {required final int? id,
+      required final String? firstName,
+      required final String? lastName,
+      required final String? email,
+      required final String? phone,
+      required final String? image}) = _$UserModelImpl;
 
   @override
-  int get id;
+  int? get id;
   @override
-  String get name;
+  String? get firstName;
   @override
-  String get company;
+  String? get lastName;
   @override
-  String get username;
+  String? get email;
   @override
-  String get email;
+  String? get phone;
   @override
-  String get address;
-  @override
-  String get zip;
-  @override
-  String get state;
-  @override
-  String get country;
-  @override
-  String get phone;
-  @override
-  String get photo;
+  String? get image;
 
   /// Create a copy of UserModel
   /// with the given fields replaced by the non-null parameter values.

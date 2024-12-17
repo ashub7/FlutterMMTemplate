@@ -42,7 +42,6 @@ dependencies:
   google_fonts: ^6.1.0
   flutter_screenutil: ^5.9.0
   collection: ^1.18.0
-  logger: ^2.0.2+1
   sprintf: ^7.0.0
   freezed_annotation: ^2.4.1
   auto_route: ^9.2.0
@@ -51,6 +50,8 @@ dependencies:
     path: "../core/design"
   domain:
     path: "../core/domain"
+  common:
+    path: "../core/common"
 
 
 dev_dependencies:

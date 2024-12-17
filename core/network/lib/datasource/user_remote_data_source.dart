@@ -1,19 +1,24 @@
+import 'package:common/network/api_urls.dart';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
+import '../network/api_client.dart';
 
 abstract class UserRemoteDataSource {
-  Future<List<dynamic>> getUsers();
+  Future<Response> getUsers();
 }
 
-@Injectable(as: UserRemoteDataSource)
+@LazySingleton(as: UserRemoteDataSource)
 class UserRemoteDataSourceImpl implements UserRemoteDataSource {
-  late final Dio dio;
+  late final ApiClient apiClient;
 
-  UserRemoteDataSourceImpl({required this.dio});
+  UserRemoteDataSourceImpl({required this.apiClient});
 
   @override
-  Future<List> getUsers() {
-    throw UnimplementedError();
+  Future<Response> getUsers() async {
+    try {
+      return await apiClient.get(ApiUrls.userListUrl);
+    } catch (e) {
+      rethrow;
+    }
   }
-
 }

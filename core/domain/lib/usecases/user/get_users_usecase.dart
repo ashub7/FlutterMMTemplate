@@ -1,12 +1,17 @@
 import 'package:domain/models/user.dart';
+import 'package:domain/repositories/user_repository.dart';
 import 'package:domain/usecases/base_usecase.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable
-class GetUsersUseCase extends BaseUseCase<String> {
+class GetUsersUseCase extends BaseUseCase<UserListResponse> {
+  final UserRepository _userRepository;
+
+  GetUsersUseCase(this._userRepository);
+
   @override
-  Future<String>  call() async{
-    return "User Use case";
+  Future<UserListResponse>  call() async{
+    return _userRepository.getUsers();
   }
 
 }

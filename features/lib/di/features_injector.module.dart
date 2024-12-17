@@ -7,14 +7,14 @@
 import 'dart:async' as _i687;
 
 import 'package:domain/usecases/user/get_users_usecase.dart' as _i977;
-import 'package:features/home/bloc/home_cubit.dart' as _i734;
+import 'package:features/home/cubit/home_cubit.dart' as _i730;
 import 'package:injectable/injectable.dart' as _i526;
 
 class FeaturesPackageModule extends _i526.MicroPackageModule {
 // initializes the registration of main-scope dependencies inside of GetIt
   @override
   _i687.FutureOr<void> init(_i526.GetItHelper gh) {
-    gh.factory<_i734.HomeCubit>(
-        () => _i734.HomeCubit(gh<_i977.GetUsersUseCase>()));
+    gh.factory<_i730.HomeCubit>(
+        () => _i730.HomeCubit(gh<_i977.GetUsersUseCase>()));
   }
 }
