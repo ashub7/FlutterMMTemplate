@@ -17,14 +17,13 @@ class HomeCubit extends Cubit<HomeState> {
   ) : super(HomeInitial());
 
   loadUsers() async {
+    emit(HomeLoading());
     try {
       final response = await _getUsersUseCase();
       emit(HomeLoadSuccess(
           users: response.users!.map((e) => UserModel.from(e)).toList()));
     } on ApiFailure catch (failure) {
-      emit(HomeLoadError(failure.message!));
-    } on Exception catch (e) {
-      logger.e(e);
+      emit(HomeLoadError(failure.message));
     }
   }
 }

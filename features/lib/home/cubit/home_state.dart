@@ -18,7 +18,7 @@ final class HomeLoadSuccess extends HomeState {
 }
 
 final class HomeLoadError extends HomeState {
-  final String message;
+  final String? message;
 
   const HomeLoadError(this.message);
 }

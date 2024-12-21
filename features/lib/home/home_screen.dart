@@ -64,12 +64,12 @@ class _HomeScreenState extends State<HomeScreen> {
           return ApiErrorWidget(
             errorText: state.message,
             onRetry: () {
-              BlocProvider.of<HomeCubit>(context).loadUsers();
+              _cubit.loadUsers();
             },
           );
         } else {
           return Center(
-            child: Assets.images.fire.asImage(),
+            child: CircularProgressIndicator(),
           );
         }
       },

@@ -1,6 +1,6 @@
 # flutter_starter_mmm
 
-## This a flutter multi-module template
+## This is a flutter multi-module template
 
 - State management is done with Bloc/Cubit
 - getIt and Injectable is used for dependency injection 
@@ -8,9 +8,13 @@
 - Intl(localization) and asset generator is used 
 - AutoRoute is used for navigation 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Modules
+- common - Contains common class which can be used in any layer
+- data - Contains repositories which exposed data from remote/local data source
+- domain - An abstraction b/w feature and data layer. It exposes use-cases.
+- network - Responsible for network operations exposes Remote data sources
+- design - Contain reusable Ui components which can used inside feature module. Additionally design module also contains localization and assets configuration.
+- features - Contains app features 
 
 ## Clean workspace
 flutter clean
